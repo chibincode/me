@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #12D7F2;
+}
+
+.header .nav {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.header .nav a {
+    margin-right: 32px;
+}
+
+.header .nav img {
+    width: 32px;
+}
+
+.header .social {
+    display: flex;
+    align-items: center;
+}
+
+.header .social a {
+    margin-left: 12px;
+}
+
+.intro {
+    max-width: 1366px;
+    margin: 64px auto;
+    padding: 0 16px;
+}
+
+.intro p {
+    max-width: 460px;
+    margin: 0;
+    line-height: 24px;
+}
+
+.intro h3 {
+    margin: 0;
+    margin-bottom: 4px;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 42px;
+    color: #333333;
+}
+
+/* work开始 */
+.work {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.work>li {
+    flex: 0 0 25%;
+    margin-bottom: 32px;
+    padding: 0px 16px;
+}
+
+.work>li>img {
+    width: 100%;
+}
+
+.work li p {
+    margin: 0;
+    margin-top: 12px;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+/* 移动端适配 媒体查询 */
+@media (max-width:540px) {
+    .work>li {
+        flex: 0 0 100%;
+    }
+}
+
+@media (min-width:541px) and (max-width:980px) {
+    .work>li {
+        flex: 0 0 50%;
+    }
+}
+
+@media (min-width:981px) and (max-width:1366px) {
+    .work>li {
+        flex: 0 0 33.3%;
+    }
+}
